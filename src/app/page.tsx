@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -36,15 +37,15 @@ export default function Home() {
         {/* Buttons */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
           <div className="bg-white py-2 flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4 min-w-[100vw] xl:min-w-[300px]">
-            <button className="flex items-center bg-black text-white hover:text-black hover:border px-4 xl:px-8 py-2 xl:py-4 rounded-full sm:text-xl xl:text-2xl hover:bg-white transition cursor-pointer">
+            <Link href={"/auth/register"} className="flex items-center bg-black text-white hover:text-black hover:border px-4 xl:px-8 py-2 xl:py-4 rounded-full sm:text-xl xl:text-2xl hover:bg-white transition cursor-pointer">
               Sign me up!
               <span className="ml-3 w-8 h-8 flex items-center justify-center bg-orange-600 rounded-full text-white font-bold text-2xl">
                 →
               </span>
-            </button>
-            <button className="bg-white border text-black hover:text-white px-4 xl:px-8 py-2 xl:py-4 rounded-full sm:text-xl xl:text-2xl hover:bg-black transition cursor-pointer">
+            </Link>
+            <Link href={"/auth/login"} className="bg-white border text-black hover:text-white px-4 xl:px-8 py-2 xl:py-4 rounded-full sm:text-xl xl:text-2xl hover:bg-black transition cursor-pointer">
               Have an account?
-            </button>
+            </Link>
           </div>
         </div>
 
